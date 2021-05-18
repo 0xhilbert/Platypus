@@ -78,7 +78,9 @@ void victim() {
     if (key[i]) {
       DO_FOR_N_SECONDS(0.1, square_and_multiply(XY, factor, N));
     } else {
-      DO_FOR_N_SECONDS(0.1, multiply(XY, factor, N));
+      // try switching these lines to go from the covert channel to an RSA like sampling attack.
+      //DO_FOR_N_SECONDS(0.1, multiply(XY, factor, N));
+      DO_FOR_N_SECONDS(0.1, usleep(10*1000));
     }
   }
 
