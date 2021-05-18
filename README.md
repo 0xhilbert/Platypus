@@ -5,6 +5,9 @@ This repository provides samples for the attacks discussed in the actual paper.
 
 For more information please visit the official [site](https://platypusattack.com). Or you can find the paper at [here](https://platypusattack.com/platypus.pdf).
 
+### Note
+All these examples were tested on Intel CPUs, AMD CPUs also expose the RAPL interface, and therefore, these examples should work on AMD as well. Except the KASLR break which is using TSX. 
+
 ### Setup
 These samples use the exposed RAPL interface, a Linux-based OS with the [PowerCap](https://www.kernel.org/doc/html/latest/power/powercap/powercap.html) framework installed.
 The presence of the interface can be tested by executing:
