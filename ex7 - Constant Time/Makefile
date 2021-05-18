@@ -12,6 +12,9 @@ main: lib main.cpp
 run: main
 	sudo taskset -c 1 ./main 2> log.csv
 
+plot:
+	ptyhon3 plot.py log.csv
+
 clean:
 	make -C ../measure/ clean
 	rm -r main
