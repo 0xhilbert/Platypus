@@ -46,5 +46,5 @@ The recorded samples are then analysed with SPA.
 ### Example outputs
 As this experiment takes longer, we provided sample files in the `samples`folder.
 
-  python3 plot.py samples/good_1.csv
-  python3 plot.py samples/good_2.csv
+    python3 plot.py samples/good_1.csv
+    python3 plot.py samples/good_2.csv
