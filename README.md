@@ -1,5 +1,5 @@
 # Platypus Attack - Educational Samples
-### What is the Platypus Attacks
+### What is the Platypus Attack
 The Platypus attack is a collection of software-based power side-channel attacks, published in November 2020.
 This repository provides samples for the attacks discussed in the actual paper.
 
