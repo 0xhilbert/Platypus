@@ -1,6 +1,9 @@
-# Platypus
+# Platypus Attack - Educational Samples
+### What is the Platypus Attacks
+The Platypus attack is a collection of software-based power side-channel attacks, published in November 2020.
+This repository provides samples for the attacks discussed in the actual paper.
 
-This is a collection of Platypus Educational Samples.
+For more information please visit the official [site](https://platypusattack.com). Or you can find the paper at [here](https://platypusattack.com/platypus.pdf).
 
 ### Setup
 These samples use the exposed RAPL interface, a Linux-based OS with the [PowerCap](https://www.kernel.org/doc/html/latest/power/powercap/powercap.html) framework installed.
