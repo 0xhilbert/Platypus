@@ -22,7 +22,7 @@ Note that the real assembly in `enclave.cpp` is modified to allow single and zer
           y = y * y;          // A-2
           y = y * x;          // A-3
         } else {
-          y = y * x;          // B-2
+          y = y * y;          // B-2
         }
         key += 1;             // A-4 B-3
       } while (*key != 2);

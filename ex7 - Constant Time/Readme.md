@@ -18,10 +18,10 @@ Note that the real assembly in `enclave.cpp` is modified to allow single and zer
       uint64_t y = 1;
       do {
         uint64_t bit = *key;               // A-1
-        uint64_t mult = bit != 0 ? y : 1;  // A-2
+        uint64_t mult = bit != 0 ? x : 1;  // A-2
 
-        y = y * mult;                      // A-3
-        y = y * x;                         // A-4
+        y = y * y;                         // A-3
+        y = y * mult;                      // A-4
 
         key += 1;                          // A-5
       } while (*key != 2);

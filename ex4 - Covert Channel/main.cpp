@@ -49,9 +49,9 @@ char key[] = {0,1,1,0,1};
 
 
 
-void multiply(uint64_t *buffer, uint64_t factor, uint64_t N) {
+void square(uint64_t *buffer, uint64_t N) {
   for (int i = 0; i < N; ++i) {
-    buffer[i] = buffer[i] * factor; 
+    buffer[i] = buffer[i] * buffer[i]; 
   }
 }
 
@@ -79,7 +79,7 @@ void victim() {
       DO_FOR_N_SECONDS(0.1, square_and_multiply(XY, factor, N));
     } else {
       // try switching these lines to go from the covert channel to an RSA like sampling attack.
-      //DO_FOR_N_SECONDS(0.1, multiply(XY, factor, N));
+      //DO_FOR_N_SECONDS(0.1, square(XY, N));
       DO_FOR_N_SECONDS(0.1, usleep(10*1000));
     }
   }

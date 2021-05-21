@@ -35,15 +35,15 @@ loop:
   )"
   
   SIM("%%r14", "mov (%%r12), %%r14") /* read the key bit */
-  SIM("%%r14",                       /* r14 = (r14 != 0) ? r15 : 1 */
+  SIM("%%r14",                       /* r14 = (r14 != 0) ? r13 : 1 */
     "cmp   $0, %%r14     \n"
     "mov   $1, %%r14     \n"
-    "cmovne %%r15, %%r14 \n"
+    "cmovne %%r13, %%r14 \n"
   )
 
-  SIM("%%r15", "imul %%r14, %%r15") /* square */
-  SIM("%%r15", "imul %%r13, %%r15") /* multiply */
-
+  SIM("%%r15", "imul %%r15, %%r15")  /* square */
+  SIM("%%r15", "imul %%r14, %%r15")  /* multiply */
+ 
   SIM("%%r12", "add $8, %%r12")      /* increment key index */
 
   R"(

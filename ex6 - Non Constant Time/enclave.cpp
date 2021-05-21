@@ -48,7 +48,7 @@ loop:
   "jmp .end \n"                      /* end */
 
 ".zero:"
-  SIM("%%r15", "imul %%r13, %%r15")  /* multiply */
+  SIM("%%r15", "imul %%r15, %%r15")  /* square */
 
 ".end:"
 
